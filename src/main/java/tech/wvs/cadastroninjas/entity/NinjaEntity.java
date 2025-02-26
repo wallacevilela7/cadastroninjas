@@ -3,7 +3,7 @@ package tech.wvs.cadastroninjas.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "table_ninjas")
+@Table(name = "tb_ninjas")
 public class NinjaEntity {
 
     @Id
@@ -19,6 +19,9 @@ public class NinjaEntity {
     @Column(name = "age")
     private Integer age;
 
+    @ManyToOne
+    @JoinColumn(name = "missao_id")
+    private MissaoEntity missao;
 
     public NinjaEntity() {
     }
