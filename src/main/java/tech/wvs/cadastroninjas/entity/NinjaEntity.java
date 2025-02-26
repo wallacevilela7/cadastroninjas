@@ -19,6 +19,9 @@ public class NinjaEntity {
     @Column(name = "age")
     private Integer age;
 
+    @Column(name = "img_url")
+    private String imgUrl;
+
     @ManyToOne
     @JoinColumn(name = "missao_id")
     private MissaoEntity missao;
