@@ -5,6 +5,14 @@ public record NinjaDto(
         String email,
         Integer age,
         String imgUrl,
-        String rankingNinja,
-        MissaoDto missao) {
+        String rankingNinja
+) {
+
+    public NinjaDto(String name, String email, Integer age, String imgUrl, String rankingNinja) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.imgUrl = imgUrl;
+        this.rankingNinja = rankingNinja;
+    }
 }
