@@ -87,4 +87,17 @@ public class NinjaEntity {
     public void setMissao(MissaoEntity missao) {
         this.missao = missao;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("NinjaEntity{");
+        sb.append("rankingNinja='").append(rankingNinja).append('\'');
+        sb.append(", imgUrl='").append(imgUrl).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", id=").append(id);
+        sb.append('}');
+        return sb.toString();
+    }
 }

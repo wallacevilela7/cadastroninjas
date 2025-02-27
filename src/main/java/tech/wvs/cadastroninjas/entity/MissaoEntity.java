@@ -47,4 +47,14 @@ public class MissaoEntity {
     public void setLevel(String level) {
         this.level = level;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("MissaoEntity{");
+        sb.append("level='").append(level).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", missaoId=").append(missaoId);
+        sb.append('}');
+        return sb.toString();
+    }
 }
